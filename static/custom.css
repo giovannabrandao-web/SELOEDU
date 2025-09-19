@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0056b3, #0099cc);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.highlight {
+    color: #0056b3;
+}
+
+.subtitle {
+    margin: 10px 0 20px;
+    font-size: 15px;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0056b3;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #003d80;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+    color: #444;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border-color: #0056b3;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

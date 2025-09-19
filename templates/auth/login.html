@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SELOEDU - Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='custom.css') }}">
+</head>
+<body>
+    <div class="page-container">
+        <div class="card">
+            <h1>Login</h1>
+            <form action="{{ url_for('do_login') }}" method="POST" class="form">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+                <button type="submit" class="btn">Entrar</button>
+            </form>
+            <a href="{{ url_for('home') }}" class="back-link">← Voltar para Home</a>
+        </div>
+    </div>
+</body>
+</html>
